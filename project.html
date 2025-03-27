@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <title>Contact</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+     <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+body{
+    background-color: rgb(0,0,33);
+    color: white;
+    font-family: 'Poppins' , sans-serif ;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(23, 23, 93);
+}
+nav ul{
+    display:flex;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+    padding: 0;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    margin: 0 10px;
+}
+nav ul li a:hover{
+    color: rgb(91, 91, 189);
+}
+.left{
+    font-size: 1.5rem;
+}
+.projects {
+    text-align: center;
+    padding: 50px;
+}
+.projects h2{
+    margin-bottom: 30px;
+}
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project-card {
+    background: #1e1e2f;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+}
+
+.project-card img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.project-card a {
+    display: block;
+    margin-top: 10px;
+    color: #ff8c00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project-card a:hover {
+    color: #ffa500;
+}
+
+     </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Fatima Naz Portfolio</div>
+             <div class="right">
+                <ul>
+               <li><a href="/index.html">Home</a></li>
+               <li><a href="/about.html">About</a></li>
+               <li><a href="/project.html">Projects</a></li>
+               <li><a href="/contact.html">Contact</a></li>    
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="projects">
+            <h2>My Projects</h2>
+            <div class="project-container">
+                <div class="project-card">
+                    <img src="project1.png" alt="Project 1" class="image-container">
+                    <h3>Calculator</h3>
+                    <p>This project is built using HTML, CSS, and JavaScript, allowing users to perform basic arithmetic operations efficiently.</p>
+                    <a href="https://fatimanaveed2009.github.io/Calculator/" target="_blank">View Project</a>
+                </div>
+        
+                <div class="project-card">
+                    <img src="project2.png" alt="Project 2" class="image-container">
+                    <h3>Weather application</h3>
+                    <p>This is a weather application built using Next.js, React.js, and Tailwind CSS. It integrates a weather API to fetch and display real-time weather data accurately.</p>
+                    <a href="https://get-he-weather.netlify.app/" target="_blank">View Project</a>
+                </div>
+
+                <div class="project-card">
+                    <img src="project3.png" alt="Project 3" class="image-container">
+                    <h3>Tic-Tac-Toe</h3>
+                    <p>This is a game I created at the beginning of my career by following a tutorial. While it still has some flaws, it served as a foundation for my growth and improvement.</p>
+                    <a href="https://tic-tac-toe-git-main-nida-nazs-projects.vercel.app/" target="_blank">View Project</a>
+                </div>
+
+                <div class="project-card">
+                    <img src="project4.png" alt="Project 4" class="image-container">
+                    <h3>Unit Converter</h3>
+                    <p>This is a Python-based application built with Streamlit that provides a variety of unit conversion options across different quantities.</p>
+                    <a href="https://unitconverter-gjcg3mrxcqes3hawhgbnun.streamlit.app/" target="_blank">View Project</a>
+                </div>
+
+                <div class="project-card">
+                    <img src="project5.png" alt="Project 5" class="image-container">
+                    <h3>Password Strength Meter</h3>
+                    <p>This is a Python-based application built with Streamlit that allows you to assess the strength of your password, ensuring robust security.</p>
+                    <a href="https://passwordstrengthgenerator-caxxlqfsxed3sgrarosxrb.streamlit.app/" target="_blank">View Project</a>
+                </div>
+
+                <div class="project-card">
+                    <img src="project6.png" alt="Project 6" class="image-container">
+                    <h3>Analog clock</h3>
+                    <p>This is an analog clock designed using HTML, CSS, and JavaScript. The clock hands are manually crafted using pure CSS, and their functionality is implemented through JavaScript</p>
+                    <a href="https://fatimanaveed2009.github.io/AnalogClock/" target="_blank">View Project</a>
+                </div>
+
+                <div class="project-card">
+                    <img src="project7.png" alt="Project 7" class="image-container">
+                    <h3>Snake Vizzel</h3>
+                    <p>This is a legendary Snake game built with HTML, CSS, and JavaScript, this game is about controlling a pixelated snake as it slithers across the board in search of food.</p>
+                    <a href="https://snakevizzel.netlify.app/" target="_blank">View Project</a>
+                </div>
+
+                <div class="project-card">
+                    <img src="project8.png" alt="Project 8" class="image-container">
+                    <h3>Portfolio builder</h3>
+                    <p>This is a responsive and functional resume builder that allows you to create  your resume effortlessly. Simply fill in the required fields, and generate a professional, shareable resume </p>
+                    <a href="https://buildingportfolio.netlify.app/" target="_blank">View Project</a>
+                </div>
+
+                <div class="project-card">
+                    <img src="project9.png" alt="Project 9" class="image-container">
+                    <h3>Glowing Button</h3>
+                    <p>This is a glowing button project, designed to showcase my CSS expertise. The highlight of this project is its stunning visual effects, including smooth color transitions and an elegant glow. </p>
+                    <a href="https://rainbowglow.netlify.app/" target="_blank">View Project</a>
+                </div>
+            </div>
+        </section>
+       
+       
+
+    </main>
+</body>
+</html>

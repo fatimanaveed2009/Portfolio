@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f7f5081d00.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+body{
+    background-color: rgb(0,0,33);
+    color: white;
+    font-family: 'Poppins' , sans-serif ;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(23, 23, 93);
+}
+nav ul{
+    display:flex;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+    padding: 0;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    margin: 0 10px;
+}
+nav ul li a:hover{
+    color: rgb(91, 91, 189);
+}
+.left{
+    font-size: 1.5rem;
+}
+.container {
+            max-width: 80%;
+            margin: auto;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: blueviolet;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+
+        .contact-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            width: 250px;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .contact-card:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .contact-card i {
+            font-size: 2rem;
+            color: blueviolet;
+            margin-bottom: 10px;
+        }
+
+        .contact-card a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.1rem;
+            display: block;
+            margin-top: 5px;
+        }
+
+        .contact-card a:hover {
+            color: rgb(91, 91, 189);
+        }
+
+        /* Floating WhatsApp Button */
+        .whatsapp-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #25d366;
+            color: white;
+            padding: 15px;
+            border-radius: 50%;
+            font-size: 1.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .whatsapp-button:hover {
+            background: #1ebd50;
+        }
+</style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Fatima Naz Portfolio</div>
+             <div class="right">
+                <ul>
+               <li><a href="/index.html">Home</a></li>
+               <li><a href="/about.html">About</a></li>
+               <li><a href="/project.html">Projects</a></li>
+               <li><a href="/contact.html">Contact</a></li>    
+                </ul>
+            </div>
+        </nav>
+  </header>
+
+  <main class="container">
+    <h1>Contact Me</h1>
+    <p>Let's connect! Reach out to me via any of the following platforms:</p>
+
+    <div class="contact-info">
+        
+        <div class="contact-card">
+            <i class="fa-brands fa-whatsapp"></i>
+            <p>WhatsApp</p>
+            <a href="https://wa.me/923213797232" target="_blank">+92 3213797232</a>
+        </div>
+
+        
+        <div class="contact-card">
+            <i class="fa-brands fa-instagram"></i>
+            <p>Instagram</p>
+            <a href="https://www.instagram.com/wildenazaura/?next=https%3A%2F%2Fwww.instagram.com%2Faccounts%2Fonetap%2F%3Fnext%3D%252F%26__coig_login%3D1" target="_blank">wildenazaura</a>
+        </div>
+
+        
+        <div class="contact-card">
+            <i class="fa-solid fa-envelope"></i>
+            <p>Email</p>
+            <a href="mailto:fn1022sk@gmail.com">fn1022sk@gmail.com</a>
+        </div>
+
+        
+        <div class="contact-card">
+            <i class="fa-brands fa-linkedin"></i>
+            <p>LinkedIn</p>
+            <a href="https://www.linkedin.com/in/fatima-naz-445487301/" target="_blank">fatima naz</a>
+        </div>
+
+        <div class="contact-card">
+            <i class="fa-brands fa-github"></i>
+            <p>Github</p>
+            <a href="https://github.com/fatimanaveed2009" target="_blank">fatimanaveed2009</a>
+        </div>
+    </div>
+
+</main>
+
+
+
+
+</body>
+</html>
