@@ -3,58 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fatima naz portfolio</title>
+    <title>Fatima Naz Portfolio</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
-        *{
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
-body{
-    background-color: rgb(0,0,33);
-    color: white;
-    font-family: 'Poppins' , sans-serif ;
-}
-nav{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 80px;
-    background-color: rgb(23, 23, 93);
-}
-nav ul{
-    display:flex;
-    justify-content: center;
-    list-style: none;
-    gap: 20px;
-    padding: 0;
-}
-
-nav ul li a{
-    text-decoration: none;
-    color: white;
-    margin: 0 10px;
-}
-nav ul li a:hover{
-    color: rgb(91, 91, 189);
-}
-.left{
-    font-size: 1.5rem;
-}
-.firstSection{
-    display: flex;
-    justify-content: space-around;
-    margin-top: 50px;
-    padding: 20px 0;
-}
-.firstSection > div{
-    width:30%;
-    font-size: 2rem;
-}
-.secondsection {
-            max-width: 80vw;
+        body {
+            background-color: rgb(0,0,33);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80px;
+            padding: 0 20px;
+            background-color: rgb(23, 23, 93);
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+            flex-direction: row;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+        nav ul li a:hover {
+            color: rgb(91, 91, 189);
+        }
+        .firstSection {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+            padding: 20px;
+            text-align: center;
+        }
+        .firstSection > div {
+            flex: 1;
+            min-width: 300px;
+        }
+        .leftdiv {
+            font-size: 2.5rem;
+        }
+        .rightdiv img {
+            width: 100%;
+            max-width: 300px;
+        }
+        .secondsection {
+            max-width: 90vw;
             margin: auto;
             text-align: center;
             padding: 20px;
@@ -66,47 +72,59 @@ nav ul li a:hover{
             text-align: left;
         }
         p {
-            margin-bottom: 15px;
-            margin-top: 12px;
+            margin: 12px 0;
         }
-.leftdiv{
-        font-size: 3rem;
-}
+        .purple{
+            color: blueviolet;
+        }
+        #element{
+            color: blueviolet;
+        }
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                height: auto;
+                padding: 10px 0;
+                text-align: center;
+            }
+            nav ul {
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .firstSection {
+                flex-direction: column;
+                text-align: center;
+            }
+            .leftdiv {
+                font-size: 2rem;
+            }
+            .rightdiv img {
+                max-width: 250px;
+            }
 
-.rightdiv img{
-    width:60% ;
-}
-
-.purple{
-    color:blueviolet;
-}
-#element{
-    color: blueviolet;
-}
-
+        }
+        
     </style>
 </head>
 <body>
     <header>
         <nav>
-            <div class="left">Fatima Naz Portfolio</div>
-             <div class="right">
-                <ul>
-               <li><a href="/index.html">Home</a></li>
-               <li><a href="/about.html">About</a></li>
-               <li><a href="/project.html">Projects</a></li>
-               <li><a href="/contact.html">Contact</a></li>    
-                </ul>
-            </div>
+            <h3 class="name">Fatima naz</h3>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/project.html">Projects</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
         </nav>
-
     </header>
     <main>
         <section class="firstSection">
-            <div class="leftdiv">Hi! its me<span class="purple"> Fatima naz.</span> 
-                <div> and I am a passionate</div>
+            <div class="leftdiv">Hi! It's me <span class="purple">Fatima Naz.</span>
+                <div>and I am a passionate</div>
                 <span id="element"></span>
-            </div>   
+            </div>
             <div class="rightdiv">
                 <img src="dp.png" alt="profilepic">
             </div>
@@ -132,16 +150,13 @@ nav ul li a:hover{
     
             <p><b>Let’s connect and build the future together! 🚀</b></p>
         </section>
-        
-        
     </main>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
         var typed = new Typed('#element', {
-          strings: ['Figma developer', 'Full-stack developer','Frontened developer'],
-          typeSpeed: 50,
+            strings: ['Figma developer', 'Full-stack developer', 'Frontend developer'],
+            typeSpeed: 50,
         });
-      </script>
-    
+    </script>
 </body>
 </html>
